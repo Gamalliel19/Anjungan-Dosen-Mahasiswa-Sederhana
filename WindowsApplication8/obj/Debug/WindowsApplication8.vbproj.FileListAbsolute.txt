@@ -22,3 +22,29 @@ C:\Users\Gamalliel Sharon\Documents\Visual Studio 2012\Projects\Aplikasi_Anjunga
 C:\Users\Gamalliel Sharon\Documents\Visual Studio 2012\Projects\Aplikasi_Anjungan_Sederhana\WindowsApplication8\obj\Debug\WindowsApplication8.Form3.resources
 C:\Users\Gamalliel Sharon\Documents\Visual Studio 2012\Projects\Aplikasi_Anjungan_Sederhana\WindowsApplication8\obj\Debug\WindowsApplication8.Resources.resources
 C:\Users\Gamalliel Sharon\Documents\Visual Studio 2012\Projects\Aplikasi_Anjungan_Sederhana\WindowsApplication8\obj\Debug\WindowsApplication8.vbproj.GenerateResource.Cache
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\bin\Debug\WindowsApplication8.exe.config
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\obj\Debug\WindowsApplication8.exe
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\obj\Debug\WindowsApplication8.xml
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\obj\Debug\WindowsApplication8.pdb
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\bin\Debug\WindowsApplication8.exe
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\bin\Debug\WindowsApplication8.pdb
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\bin\Debug\WindowsApplication8.xml
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\obj\Debug\WindowsApplication8.Datajenis.resources
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\obj\Debug\WindowsApplication8.Form2.resources
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\obj\Debug\WindowsApplication8.Form3.resources
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\obj\Debug\WindowsApplication8.Resources.resources
+C:\Users\Gamalliel Sharon\Documents\PYTHON\Data Mahasiswa Institut Teknologi PLN tahun 2020\WindowsApplication8\obj\Debug\WindowsApplication8.vbproj.GenerateResource.Cache
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\bin\Debug\WindowsApplication8.exe.config
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\bin\Debug\WindowsApplication8.exe
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\bin\Debug\WindowsApplication8.pdb
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\bin\Debug\WindowsApplication8.xml
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.vbprojAssemblyReference.cache
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.Datajenis.resources
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.Form2.resources
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.Form3.resources
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.Resources.resources
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.vbproj.GenerateResource.cache
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.vbproj.CoreCompileInputs.cache
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.exe
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.xml
+C:\Users\sharo\OneDrive\Documents\VS projects\201731156_Gamalliel Sharon_Kelompok4_PBD_KelasH\WindowsApplication8\obj\Debug\WindowsApplication8.pdb

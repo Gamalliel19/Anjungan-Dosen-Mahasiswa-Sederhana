@@ -60,10 +60,10 @@ Public Class Form3
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         Call koneksi()
-        da = New OleDbDataAdapter("SELECT * from Jadwal where nama_dosen LIKE '%" & TextBox1.Text & "%'", conn)
+        da = New OleDbDataAdapter("SELECT * from Jadwal where Nim LIKE '%" & TextBox1.Text & "%'", conn)
         ds = New DataSet
-        da.Fill(ds, "nama_dosen")
-        DataGridView1.DataSource = ds.Tables("nama_dosen")
+        da.Fill(ds, "Nim")
+        DataGridView1.DataSource = ds.Tables("Nim")
         DataGridView1.DataSource = ds.Tables(0)
     End Sub
 End Class

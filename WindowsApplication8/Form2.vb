@@ -12,11 +12,11 @@ Public Class Form2
         User = TextBox1.Text
         Password = TextBox2.Text
         If User = "admin" And Password = "admin" Then
-            MsgBox("Selamat Datang Dosen!")
+            MsgBox("Selamat Datang!")
             Datajenis.Show()
             Me.Hide()
         Else If User = "siswa" And Password = "siswa" Then
-            MsgBox("Selamat Datang Siswa!")
+            MsgBox("Selamat Datang!")
             Form3.Show()
             Me.Hide()
         Else
@@ -29,6 +29,7 @@ Public Class Form2
         Dim pesan As String
         pesan = MsgBox("Anda Yakin Mau Keluar ??", vbQuestion + vbYesNo, "Question")
         If pesan = vbYes Then
+            Me.Close()
 
 
         End If

@@ -3,20 +3,17 @@ Public Class Datajenis
     Sub kosong()
         Textbox1.Text = ""
         TextBox2.Text = ""
-        TextBox3.Text = ""
+        ComboBox1.Text = ""
         TextBox4.Text = ""
-        TextBox6.Text = ""
-        TextBox7.Text = ""
+        ComboBox2.Text = ""
+        ComboBox3.Text = ""
         TextBox8.Text = ""
         TextBox9.Text = ""
         TextBox1.Focus()
     End Sub
     Sub isi()
         TextBox2.Clear()
-        TextBox3.Clear()
         TextBox4.Clear()
-        TextBox6.Clear()
-        TextBox7.Clear()
         TextBox8.Clear()
         TextBox9.Clear()
         TextBox2.Focus()
@@ -39,14 +36,14 @@ Public Class Datajenis
         DataGridView1.Columns(5).Width = 100
         DataGridView1.Columns(6).Width = 100
         DataGridView1.Columns(7).Width = 100
-        DataGridView1.Columns(0).HeaderText = "Kode_Dosen"
-        DataGridView1.Columns(1).HeaderText = "Kode_Matkul"
-        DataGridView1.Columns(2).HeaderText = "Nama_Dosen"
-        DataGridView1.Columns(3).HeaderText = "Mata_Kuliah"
-        DataGridView1.Columns(4).HeaderText = "Hari"
-        DataGridView1.Columns(5).HeaderText = "Jam"
-        DataGridView1.Columns(6).HeaderText = "Kelas"
-        DataGridView1.Columns(7).HeaderText = "Ruangan"
+        DataGridView1.Columns(0).HeaderText = "Nim"
+        DataGridView1.Columns(1).HeaderText = "Nama"
+        DataGridView1.Columns(2).HeaderText = "Sex"
+        DataGridView1.Columns(3).HeaderText = "Alamat"
+        DataGridView1.Columns(4).HeaderText = "Agama"
+        DataGridView1.Columns(5).HeaderText = "Jurusan"
+        DataGridView1.Columns(6).HeaderText = "Hobby"
+        DataGridView1.Columns(7).HeaderText = "Kode Kelas"
     End Sub
     Private Sub Form1_Load(sender As Object, e As System.EventArgs) Handles MyBase.Load
         Call koneksi()
@@ -63,20 +60,20 @@ Public Class Datajenis
             TextBox1.Focus()
             Exit Sub
         Else
-            cmd = New OleDbCommand("select * from Jadwal where kode_dosen='" & TextBox1.Text & "'", conn)
-            cmd = New OleDbCommand("select * from Jadwal where kode_matkul='" & TextBox2.Text & "'", conn)
-            cmd = New OleDbCommand("select * from Jadwal where nama_dosen='" & TextBox3.Text & "'", conn)
-            cmd = New OleDbCommand("select * from Jadwal where mata_kuliah='" & TextBox4.Text & "'", conn)
-            cmd = New OleDbCommand("select * from Jadwal where kode_dosen='" & TextBox6.Text & "'", conn)
-            cmd = New OleDbCommand("select * from Jadwal where kode_matkul='" & TextBox7.Text & "'", conn)
-            cmd = New OleDbCommand("select * from Jadwal where nama_dosen='" & TextBox8.Text & "'", conn)
-            cmd = New OleDbCommand("select * from Jadwal where mata_kuliah='" & TextBox9.Text & "'", conn)
+            cmd = New OleDbCommand("select * from Jadwal where Nim='" & TextBox1.Text & "'", conn)
+            cmd = New OleDbCommand("select * from Jadwal where Nama='" & TextBox2.Text & "'", conn)
+            cmd = New OleDbCommand("select * from Jadwal where Sex='" & ComboBox1.Text & "'", conn)
+            cmd = New OleDbCommand("select * from Jadwal where Alamat='" & TextBox4.Text & "'", conn)
+            cmd = New OleDbCommand("select * from Jadwal where Agama='" & ComboBox2.Text & "'", conn)
+            cmd = New OleDbCommand("select * from Jadwal where Jurusan='" & ComboBox3.Text & "'", conn)
+            cmd = New OleDbCommand("select * from Jadwal where Hobby='" & TextBox8.Text & "'", conn)
+            cmd = New OleDbCommand("select * from Jadwal where Kd_kelas='" & TextBox9.Text & "'", conn)
 
 
             rd = cmd.ExecuteReader
             rd.Read()
             If Not rd.HasRows Then
-                Dim simpan As String = "insert into Jadwal values('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "','" & TextBox9.Text & "' )"
+                Dim simpan As String = "insert into Jadwal values('" & TextBox1.Text & "','" & TextBox2.Text & "','" & ComboBox1.Text & "','" & TextBox4.Text & "','" & ComboBox2.Text & "','" & ComboBox3.Text & "','" & TextBox8.Text & "','" & TextBox9.Text & "' )"
                 cmd = New OleDbCommand(simpan, conn)
                 cmd.ExecuteNonQuery()
                 MsgBox("Simpan Data Sukses", MsgBoxStyle.Information, "Perhatian")
@@ -94,9 +91,15 @@ Public Class Datajenis
             TextBox1.Focus()
             Exit Sub
         Else
-            Dim ubah As String = "Update Jadwal set " & _
-            "nama_dosen='" & TextBox3.Text & "' " & _
-            "where kode_dosen='" & TextBox1.Text & "'"
+            Dim ubah As String = "Update Jadwal set " &
+            "Nama='" & TextBox2.Text & "' " &
+            ",Sex='" & ComboBox1.Text & "' " &
+            ",Alamat='" & TextBox4.Text & "' " &
+            ",Agama='" & ComboBox2.Text & "' " &
+            ",Jurusan='" & ComboBox3.Text & "' " &
+            ",Hobby='" & TextBox8.Text & "' " &
+            ",Kd_kelas='" & TextBox9.Text & "' " &
+            "where Nim='" & TextBox1.Text & "'"
             cmd = New OleDbCommand(ubah, conn)
             cmd.ExecuteNonQuery()
             MsgBox("Ubah data sukses", MsgBoxStyle.Information, "Perhatian")
@@ -110,13 +113,13 @@ Public Class Datajenis
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If TextBox1.Text = "" Then
-            MsgBox("kode Dosen belum diisi")
+            MsgBox("Nim belum diisi")
             TextBox1.Focus()
             Exit Sub
         Else
             If MessageBox.Show("Yakin akan menghapus data jenis " & TextBox1.Text &
                                "?", "", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
-                cmd = New OleDbCommand("delete * from Jadwal where kode_dosen='" & TextBox1.Text & "'", conn)
+                cmd = New OleDbCommand("delete * from Jadwal where Nim='" & TextBox1.Text & "'", conn)
                 cmd.ExecuteNonQuery()
                 Call kosong()
                 Call TampilJenis()
@@ -136,6 +139,23 @@ Public Class Datajenis
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Hari_Click(sender As Object, e As EventArgs) Handles Hari.Click
 
     End Sub
 End Class

@@ -42,11 +42,11 @@ Partial Class Form3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(60, 53)
+        Me.Label1.Location = New System.Drawing.Point(112, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(174, 20)
+        Me.Label1.Size = New System.Drawing.Size(113, 20)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Masukkan Kode Dosen"
+        Me.Label1.Text = "Masukkan Nim"
         '
         'TextBox1
         '
